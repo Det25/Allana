@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" fill="none">
+  <rect width="1000" height="640" fill="#F6FAFE"/>
+  <circle cx="786" cy="118" r="62" fill="#DCE9F6" stroke="#10233F" stroke-width="3"/>
+  <g stroke="#10233F" stroke-width="3" stroke-linecap="round" opacity=".58"><path d="M786 34V15M786 221V202M702 118H682M890 118H870M727 59L713 45M859 177L873 191M845 59L860 44M727 177L713 191"/></g>
+  <path d="M55 151C74 130 105 131 121 149C137 132 170 140 178 160H45Z" fill="#FFF" stroke="#10233F" stroke-width="2.5"/>
+  <path d="M0 484C147 457 229 473 353 463C504 451 608 482 744 464C846 451 933 460 1000 450V640H0Z" fill="#E8F1FA"/>
+  <g stroke="#10233F" stroke-width="3" stroke-linejoin="round">
+    <path d="M70 485V278L153 228L236 278V485Z" fill="#FFF"/>
+    <path d="M102 311H130V348H102ZM174 311H202V348H174ZM102 374H130V411H102ZM174 374H202V411H174Z" fill="#DCE9F6"/>
+    <path d="M254 485V191H413V485Z" fill="#EAF2FA"/>
+    <path d="M280 225H309V255H280ZM350 225H379V255H350ZM280 281H309V311H280ZM350 281H379V311H350ZM280 337H309V367H280ZM350 337H379V367H350Z" fill="#FFF"/>
+    <path d="M434 485V300H585V485Z" fill="#FFF"/>
+    <path d="M418 300L509 252L601 300Z" fill="#DCE9F6"/>
+    <path d="M459 333H490V370H459ZM526 333H557V370H526Z" fill="#EAF2FA"/>
+    <path d="M620 485V224H759V485Z" fill="#EAF2FA"/>
+    <path d="M650 257H679V288H650ZM701 257H730V288H701ZM650 313H679V344H650ZM701 313H730V344H701Z" fill="#FFF"/>
+    <path d="M783 485V336L853 288L923 336V485Z" fill="#FFF"/>
+    <path d="M820 360H845V392H820ZM862 360H887V392H862Z" fill="#DCE9F6"/>
+    <path d="M846 485V421H879V485" fill="#EAF2FA"/>
+    <path d="M35 485H970" stroke-width="4"/>
+    <path d="M0 512H1000" stroke-width="1.8" opacity=".45"/>
+  </g>
+  <g stroke="#10233F" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M83 535C134 526 175 527 225 535M286 555C350 545 418 547 476 555M586 534C640 526 687 527 742 534M799 557C853 548 904 550 960 556"/>
+    <path d="M90 485V414M68 430C46 411 55 378 82 379C74 351 111 343 124 369C150 367 159 400 136 414C128 429 107 432 90 430Z" fill="#DCE9F6"/>
+    <path d="M930 485V421M910 438C888 418 901 388 924 390C922 364 957 363 964 390C987 393 989 423 968 437Z" fill="#DCE9F6"/>
+  </g>
+  <g fill="#10233F" font-family="Georgia,serif" font-style="italic" font-size="24" opacity=".82"><text x="65" y="590">uma cidade qualquer</text><text x="768" y="600">e um dia bonito.</text></g>
+  <g stroke="#10233F" stroke-width="2.5" stroke-linecap="round" opacity=".85"><path d="M420 93C434 82 446 90 449 102M459 87L468 79M469 100L481 97"/><path d="M545 140C559 129 571 137 574 149M584 134L593 126M594 147L606 144"/></g>
+</svg>

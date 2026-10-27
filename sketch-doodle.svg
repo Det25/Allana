@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 450" fill="none">
+  <rect width="360" height="450" fill="#F7FAFE"/>
+  <path d="M57 62H303V332H57Z" fill="#FFF" stroke="#10233F" stroke-width="3"/>
+  <path d="M85 102C100 90 129 98 127 121C126 144 94 151 93 176C92 192 113 204 134 191C151 181 163 151 181 153C198 155 202 182 218 184C233 186 251 168 248 148" stroke="#10233F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M96 242C124 224 139 251 163 236C188 220 196 253 219 239C235 230 250 242 266 225" stroke="#7898BC" stroke-width="3" stroke-linecap="round"/>
+  <g transform="rotate(24 253 304)"><path d="M239 213L263 213L263 326L251 349L239 326Z" fill="#DCE9F6" stroke="#10233F" stroke-width="3" stroke-linejoin="round"/><path d="M239 326H263M247 342L251 349L255 342" stroke="#10233F" stroke-width="3"/></g>
+  <path d="M71 351L87 342M286 84L301 74M71 281L83 276" stroke="#10233F" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="180" y="394" fill="#10233F" font-family="Georgia,serif" font-size="27" font-style="italic" text-anchor="middle">só mais um traço</text>
+</svg>

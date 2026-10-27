@@ -1,156 +1,173 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10233f">
+  <meta name="theme-color" content="#14284b">
   <meta name="description" content="Um cantinho feito para Allana.">
+  <!-- Página pessoal: pede aos buscadores para não indexar. Remova esta linha se quiser o contrário. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Allana — um cantinho seu">
+  <meta property="og:description" content="Um cantinho feito para Allana.">
   <title>Allana — um cantinho seu</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💙%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <noscript>
+    <style>
+      .intro { display: none; }
+      .app.is-locked { opacity: 1; visibility: visible; pointer-events: auto; }
+      .reveal { opacity: 1; transform: none; }
+      body.no-scroll { overflow: auto; }
+    </style>
+  </noscript>
   <script src="script.js" defer></script>
 </head>
-<body>
-  <div class="paper-grain" aria-hidden="true"></div>
-  <div class="ambient-doodles" id="ambientDoodles" aria-hidden="true"></div>
 
+<body class="no-scroll">
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <!-- Capa -->
   <section class="intro" id="intro" aria-label="Entrada">
-    <img class="intro-art" src="assets/city-day.svg" alt="Ilustração de uma cidade durante o dia, desenhada em azul e branco">
-    <div class="intro-paper">
-      <span class="eyebrow">uma edição pequena</span>
+    <img class="intro-art" src="city-day.svg"
+      alt="Ilustração em traço azul de uma cidade à beira-mar num dia de sol">
+    <div class="intro-card">
+      <span class="eyebrow">Uma parte de mim</span>
       <h1>Allana<span class="title-dot">.</span></h1>
-      <p>Fiz um cantinho pra você.</p>
+      <p>Fiz algo para nós.</p>
+      <button class="btn btn-primary" id="enterButton" type="button">Entrar <span aria-hidden="true">→</span></button>
       <span class="intro-handnote">pode entrar :)</span>
-      <button class="enter-button" id="enterButton" type="button">
-        <span>Entrar</span><span aria-hidden="true">↗</span>
-      </button>
-      <span class="paper-tape" aria-hidden="true"></span>
     </div>
-    <span class="intro-index">ARQUIVO PESSOAL · 001</span>
+    <span class="intro-index">Feito por Det</span>
   </section>
 
   <div class="app is-locked" id="app">
-    <aside class="side-rail" aria-label="Navegação">
-      <a class="rail-mark" href="#home" data-view="home" aria-label="Ir para o início">a<span>.</span></a>
-      <nav class="rail-nav">
-        <button class="nav-item active" type="button" data-view="home" aria-label="Início" aria-current="page"><span class="nav-glyph">⌂</span><span class="nav-label">Início</span></button>
-        <button class="nav-item" type="button" data-view="music" aria-label="Músicas"><span class="nav-glyph">♫</span><span class="nav-label">Músicas</span></button>
-        <button class="nav-item" type="button" data-view="mural" aria-label="Mural"><span class="nav-glyph">▧</span><span class="nav-label">Mural</span></button>
-        <button class="nav-item" type="button" data-view="notes" aria-label="Rabiscos"><span class="nav-glyph">✎</span><span class="nav-label">Rabiscos</span></button>
-        <button class="nav-item" type="button" data-view="letter" aria-label="Carta"><span class="nav-glyph">✉</span><span class="nav-label">Carta</span></button>
+    <!-- Topo fixo -->
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">A<span>.</span></a>
+      <nav class="site-nav" aria-label="Navegação">
+        <a class="nav-link active" href="#inicio" aria-current="location">Início</a>
+        <a class="nav-link" href="#carta">Carta</a>
       </nav>
-      <span class="rail-bottom" aria-hidden="true">♡</span>
-    </aside>
+      <span class="header-mark">Allana & Det.</span>
+    </header>
 
-    <main class="main-stage" id="mainStage">
-      <header class="topbar">
-        <div class="topbar-title"><span class="eyebrow">caderno digital</span><p>feito com carinho, pra Allana</p></div>
-        <span class="topbar-mark">D. / A.</span>
-      </header>
-
-      <section class="view active" id="home" data-view-panel>
-        <div class="home-hero reveal-on-view">
-          <div class="home-copy">
-            <span class="eyebrow">bem-vinda ao seu canto</span>
-            <h2>Um pouco de música,<br>rabiscos e <em>caos.</em></h2>
-            <p>Algumas coisas que têm a sua cara. Sem muita explicação — é só ir olhando.</p>
-            <button class="text-link" type="button" data-go-view="mural">Ver o mural <span aria-hidden="true">→</span></button>
-          </div>
-          <div class="home-art-wrap">
-            <img class="home-art" src="assets/city-day.svg" alt="Prédios, sol e rabiscos de uma cidade durante o dia">
-            <span class="art-sticker sticker-top">dia bonito</span>
-            <span class="art-sticker sticker-bottom">sem roteiro</span>
-            <span class="art-scribble" aria-hidden="true">✳</span>
-          </div>
-          <span class="hero-caption">FIG. 01 — vista imaginária de uma terça-feira qualquer</span>
+    <main class="main">
+      <!-- Destaque -->
+      <section class="hero" id="inicio" aria-labelledby="heroTitle">
+        <figure class="hero-art reveal">
+          <img src="city-day.svg"
+            alt="Cidade à beira-mar desenhada em azul, com calçadão, prédios, barcos e sol">
+          <span class="sticker sticker-top">Espírito Santo</span>
+          <span class="sticker sticker-bottom">Você é trouxa</span>
+        </figure>
+        <div class="hero-card reveal">
+          <span class="eyebrow">bem-vinda ao seu buteco</span>
+          <h2 id="heroTitle" tabindex="-1">Um pouco de você,<br>rabiscos e <em>caos.</em></h2>
+          <p>Algumas coisas que têm a sua cara. Sem muita explicação — é só ir rolando.</p>
+          <a class="btn btn-sun" href="#carta">Ir para a carta <span aria-hidden="true">↓</span></a>
         </div>
+      </section>
 
-        <div class="section-intro reveal-on-view">
+      <!-- Coisas importantes -->
+      <section class="interests" aria-labelledby="interestsTitle">
+        <div class="section-head reveal">
           <span class="eyebrow">índice de assuntos</span>
-          <h3>Coisas importantes (mais ou menos).</h3>
+          <h3 id="interestsTitle">Coisas importantes <em>(mais ou menos).</em></h3>
         </div>
-        <div class="interest-strip reveal-on-view">
-          <button class="interest-chip" type="button" data-go-view="music"><span class="chip-doodle">♫</span><span>Música alta</span></button>
-          <button class="interest-chip" type="button" data-go-view="notes"><span class="chip-doodle">✎</span><span>Desenhar em qualquer canto</span></button>
-          <button class="interest-chip" type="button" data-go-view="mural"><span class="chip-doodle">☻</span><span>Arrumar implicância</span></button>
-          <button class="interest-chip" type="button" data-go-view="mural"><span class="chip-doodle">▱</span><span>Bolo de chocolate</span></button>
-        </div>
-
-        <div class="marx-note reveal-on-view">
-          <span class="margin-label">anotação que ficou na margem</span>
-          <blockquote>“Os filósofos apenas interpretaram o mundo de diferentes maneiras; o que importa é transformá-lo.”</blockquote>
-          <cite>— Karl Marx, <em>Teses sobre Feuerbach</em>, tese 11</cite>
-          <span class="marx-doodle" aria-hidden="true">↗</span>
+        <div class="interest-grid">
+          <article class="interest-card tone-sea reveal">
+            <span class="interest-num">01</span>
+            <span class="interest-icon" aria-hidden="true">♫</span>
+            <h4>Música</h4>
+          </article>
+          <article class="interest-card tone-sky reveal">
+            <span class="interest-num">02</span>
+            <span class="interest-icon" aria-hidden="true">✎</span>
+            <h4>Rabiscar</h4>
+          </article>
+          <article class="interest-card tone-sun reveal">
+            <span class="interest-num">03</span>
+            <span class="interest-icon" aria-hidden="true">☻</span>
+            <h4>Implicância</h4>
+          </article>
+          <article class="interest-card tone-ink reveal">
+            <span class="interest-num">04</span>
+            <span class="interest-icon" aria-hidden="true">▱</span>
+            <h4>Bolo de chocolate</h4>
+          </article>
         </div>
       </section>
 
-      <section class="view" id="music" data-view-panel>
-        <div class="section-head reveal-on-view"><span class="eyebrow">lado A / lado B</span><h2>Pra ouvir por aí<span class="title-dot">.</span></h2><p>Pra desenhar, andar pela cidade ou simplesmente deixar tocando.</p></div>
-        <div class="mixtape-layout reveal-on-view">
-          <div class="record-card">
-            <div class="record-art" aria-hidden="true"><div class="vinyl"><span></span></div><div class="record-label">A.</div><div class="record-needle"></div></div>
-            <div class="record-caption"><span class="eyebrow">mixtape não oficial</span><h3>volume<br><em>à sua escolha.</em></h3><p>Abre uma busca no Spotify e escolhe o som do momento.</p></div>
-            <div class="record-footer"><span>33⅓ RPM</span><span>feito pra apertar o play</span></div>
+      <!-- Citação -->
+      <section class="quote reveal" aria-label="Citação">
+        <span class="margin-label">Comunista buxudo</span>
+        <blockquote>Como o sol e a chuva fazem as plantas crescer, a distância faz meu amor crescer.</blockquote>
+        <cite>— Karl Marx</cite>
+      </section>
+
+      <!-- Carta -->
+      <section class="letter-section" id="carta" aria-labelledby="letterCta">
+        <div class="letter-card reveal">
+          <div class="letter-topline"><span class="eyebrow">última página</span><span class="letter-stamp">Allana</span>
           </div>
-          <div class="music-links">
-            <a class="music-link" href="https://open.spotify.com/search/lofi%20beats" target="_blank" rel="noopener noreferrer"><span class="track-number">01</span><span class="track-copy"><strong>Pra desenhar</strong><small>lo-fi / instrumental</small></span><span class="track-arrow">↗</span></a>
-            <a class="music-link" href="https://open.spotify.com/search/indie%20pop" target="_blank" rel="noopener noreferrer"><span class="track-number">02</span><span class="track-copy"><strong>Pra sair por aí</strong><small>indie pop</small></span><span class="track-arrow">↗</span></a>
-            <a class="music-link" href="https://open.spotify.com/search/pop%20rock" target="_blank" rel="noopener noreferrer"><span class="track-number">03</span><span class="track-copy"><strong>Pra incomodar os vizinhos</strong><small>pop / rock</small></span><span class="track-arrow">↗</span></a>
-            <p class="music-footnote">As buscas são só um ponto de partida — escolhe o que combinar com o seu dia.</p>
+          <div class="envelope-scene" aria-hidden="true">
+            <div class="envelope"><span class="envelope-heart">♥</span></div>
+            <span class="envelope-spark spark-one">✳</span>
+            <span class="envelope-spark spark-two">✦</span>
           </div>
-        </div>
-      </section>
-
-      <section class="view" id="mural" data-view-panel>
-        <div class="section-head reveal-on-view"><span class="eyebrow">recortes soltos</span><h2>Mural de coisas<span class="title-dot">.</span></h2><p>Sem ordem de importância. Exceto pelo bolo, talvez.</p></div>
-        <div class="polaroid-grid">
-          <button class="polaroid tilt-a reveal-on-view" type="button" data-caption="A trilha sonora oficial de ficar no próprio mundo."><span class="tape" aria-hidden="true"></span><img src="assets/music-doodle.svg" alt="Ilustração de fones e ondas sonoras"><span class="polaroid-caption">volume alto</span><small class="polaroid-sub">lado A</small></button>
-          <button class="polaroid tilt-b reveal-on-view" type="button" data-caption="Sempre existe espaço pra mais um rabisco. Até na margem desse site."><span class="tape" aria-hidden="true"></span><img src="assets/sketch-doodle.svg" alt="Ilustração de lápis e rabiscos"><span class="polaroid-caption">só mais um traço</span><small class="polaroid-sub">sem borracha</small></button>
-          <button class="polaroid tilt-c reveal-on-view" type="button" data-caption="Não é suborno se o bolo for dividido igualmente. Talvez."><span class="tape" aria-hidden="true"></span><img src="assets/cake-doodle.svg" alt="Fatia de bolo de chocolate ilustrada"><span class="polaroid-caption">prioridade nacional</span><small class="polaroid-sub">chocolate resolve</small></button>
-          <button class="polaroid tilt-d reveal-on-view" type="button" data-caption="Uma voltinha pela cidade, de dia, sem precisar inventar muita coisa."><span class="tape" aria-hidden="true"></span><img src="assets/city-day.svg" alt="Ilustração de prédios sob o sol"><span class="polaroid-caption">modo passeio</span><small class="polaroid-sub">sem roteiro</small></button>
-        </div>
-        <p class="mural-hint" id="muralHint" aria-live="polite">Clica em um recorte. Eles têm comentários.</p>
-      </section>
-
-      <section class="view" id="notes" data-view-panel>
-        <div class="section-head reveal-on-view"><span class="eyebrow">margens do caderno</span><h2>Rabiscos<span class="title-dot">.</span></h2><p>Três observações sem nenhuma pesquisa científica por trás.</p></div>
-        <div class="scribble-board reveal-on-view">
-          <article class="scribble-note note-blue"><span class="note-number">01 / som</span><p>Tem gente que ouve música. Tem gente que entra em outro universo e deixa o resto esperando.</p><span class="hand-sign">♪</span></article>
-          <article class="scribble-note note-white"><span class="note-number">02 / desenho</span><p>Uma folha em branco é só uma folha em branco por uns cinco segundos.</p><span class="hand-sign">✎</span></article>
-          <article class="scribble-note note-outline"><span class="note-number">03 / convivência</span><p>A paz é importante. Perturbar os outros também parece ser.</p><span class="hand-sign">:)</span></article>
-        </div>
-        <div class="side-comment reveal-on-view"><span class="margin-label">nota de rodapé</span><p>Em caso de emergência, consultar o protocolo do bolo de chocolate.</p><button class="cake-toggle" id="cakeToggle" type="button" aria-expanded="false">Ver protocolo <span aria-hidden="true">↗</span></button><p class="cake-reveal" id="cakeReveal" hidden>1. Encontrar bolo. 2. Cortar uma fatia generosa. 3. Considerar o problema parcialmente resolvido.</p></div>
-      </section>
-
-      <section class="view" id="letter" data-view-panel>
-        <div class="letter-page reveal-on-view">
-          <div class="letter-topline"><span class="eyebrow">última página</span><span class="letter-stamp">A / 01</span></div>
-          <div class="envelope-scene" aria-hidden="true"><div class="envelope"><span class="envelope-heart">♡</span></div><span class="envelope-spark spark-one">✳</span><span class="envelope-spark spark-two">✦</span></div>
-          <h2>Uma coisa que eu queria te falar.</h2>
+          <h2 id="letterCta">Uma coisa que eu queria te falar.</h2>
           <p>Chegou até aqui. Agora abre a carta.</p>
-          <button class="text-link" id="openLetter" type="button">Abrir carta <span aria-hidden="true">→</span></button>
+          <button class="btn btn-primary" id="openLetter" type="button">Abrir carta <span
+              aria-hidden="true">→</span></button>
+          <noscript><p>Ative o JavaScript do navegador para abrir a carta.</p></noscript>
         </div>
       </section>
-
-      <footer class="site-footer"><span>feito com carinho, sem manual de instruções</span><span>ALLANA · 001</span></footer>
     </main>
+
+    <footer class="site-footer"><span>feito com tesão</span><span>Det</span>
+    </footer>
   </div>
 
+  <!-- Pedido -->
   <div class="modal" id="letterModal" aria-hidden="true">
     <button class="modal-backdrop" type="button" data-close-modal aria-label="Fechar carta"></button>
     <section class="letter-paper" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
       <button class="close-button" type="button" data-close-modal aria-label="Fechar">×</button>
       <span class="eyebrow">pra você, Allana</span>
-      <h2 id="letterTitle">Tá, vou falar logo.</h2>
-      <p>Eu gosto de você. E queria te perguntar isso de um jeito que fosse um pouco diferente de simplesmente mandar uma mensagem.</p>
+      <h2 id="letterTitle">Tá, vou falar logo. (pq n sou confuso q nem vc)</h2>
+      <p>Eu gosto demais de você — na verdade, eu te amo. Só que eu queria fazer esse pedido de um jeito diferente, não
+        só chegar e falar na sua cara né (gosto de enrolar rs)? Quero te provar que tô aqui de verdade e que faço
+        questão de me esforçar por você. Mesmo com esse seu jeitinho meio sonsa que me irrita às vezes, eu não
+        troco a sua companhia por nada. Quero muito caminhar do seu lado e prometo estar sempre aqui pra segurar a sua
+        mão, nos dias fáceis e nos difíceis também.</p>
       <p class="final-question">Allana, você aceita namorar comigo?</p>
-      <div class="proposal-actions" id="proposalActions"><button class="button-primary" id="acceptButton" type="button">Aceito 💙</button><button class="button-secondary" id="talkButton" type="button">Quero conversar antes</button></div>
-      <div class="proposal-answer" id="acceptAnswer" hidden aria-live="polite"><h3 tabindex="-1">Então tá. Agora é oficial? 💙</h3><p>Quero viver um monte de coisas legais com você — inclusive ouvir música, ver seus desenhos e ser alvo das suas perturbações.</p><p class="response-sub">Depois vem falar comigo onde a gente conversa normalmente. Quero saber sua reação fora daqui também.</p></div>
-      <div class="proposal-answer" id="talkAnswer" hidden aria-live="polite"><h3>Sem pressão, de verdade.</h3><p>Queria ser sincero com você. Pode pensar e conversar comigo no seu tempo.</p><button class="text-link" id="backToChoices" type="button">Voltar à pergunta <span aria-hidden="true">↗</span></button></div>
+      <div class="proposal-actions" id="proposalActions">
+        <button class="btn btn-primary" id="acceptButton" type="button">Aceito 💙</button>
+        <button class="btn btn-ghost" id="talkButton" type="button">Quero conversar antes</button>
+      </div>
+      <div class="proposal-answer" id="acceptAnswer" hidden aria-live="polite">
+        <h3 tabindex="-1">Então tá. Agora é oficial? 💙</h3>
+        <p>Quero viver um monte de coisas legais com você — inclusive ouvir música, ver seus desenhos e ser alvo das
+          suas perturbações (e você vai ter q me aturar rs).</p>
+        <p class="response-sub">Só n some depois rs.</p>
+      </div>
+      <div class="proposal-answer" id="talkAnswer" hidden aria-live="polite">
+        <h3 tabindex="-1">Você é muito trouxa, por isso ninguém te amaKKKKKKKK.</h3>
+        <p>Queria ser sincero com você. Pode ir pá casa do caraio.</p>
+        <button class="text-link" id="backToChoices" type="button">Voltar à pergunta <span
+            aria-hidden="true">↗</span></button>
+      </div>
       <span class="letter-signoff">— feito por mim, pra você.</span>
     </section>
   </div>
 </body>
+
 </html>

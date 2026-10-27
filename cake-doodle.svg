@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 450" fill="none">
+  <rect width="360" height="450" fill="#F1F6FB"/>
+  <ellipse cx="180" cy="323" rx="115" ry="23" fill="#DCE9F6" stroke="#10233F" stroke-width="2.5"/>
+  <path d="M82 232L215 159L282 205L150 281Z" fill="#DCE9F6" stroke="#10233F" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M82 232L150 281V321L82 275Z" fill="#FFF" stroke="#10233F" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M150 281L282 205V247L150 321Z" fill="#AFC5DE" stroke="#10233F" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M82 232L215 159L282 205L150 281Z" fill="#F7FAFE" stroke="#10233F" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M101 233L215 171L261 203L149 266Z" fill="#10233F"/>
+  <path d="M100 242L150 278L265 211" stroke="#7898BC" stroke-width="4" stroke-linecap="round"/>
+  <path d="M174 188C182 201 195 193 198 184C204 197 216 191 219 180" stroke="#10233F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M76 155C69 141 83 127 96 136C100 121 119 126 119 141C131 145 129 161 116 166" stroke="#10233F" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M242 113L249 129L266 132L253 143L256 160L241 151L226 160L230 143L217 132L234 129Z" fill="#DCE9F6" stroke="#10233F" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="180" y="382" fill="#10233F" font-family="Georgia,serif" font-size="28" font-style="italic" text-anchor="middle">prioridade nacional</text>
+</svg>
